@@ -60,3 +60,17 @@ brews:
     commit_author:
       name: goreleaserbot
       email: bot@goreleaser.com
+
+scoops:
+  -
+    name: access_key_manager
+    homepage: "https://github.com/stuarthicks/access_key_manager"
+    description: "CLI for rotating AWS Access Keys"
+    license: "MIT"
+    directory: bucket
+    repository:
+      owner: stuarthicks
+      name: scoop-bucket
+    commit_author:
+      name: goreleaserbot
+      email: bot@goreleaser.com
