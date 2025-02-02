@@ -142,8 +142,8 @@ func updateCredentialsFile(oldAccessKeyID, newAccessKeyID, newSecretAccessKey st
 		return fmt.Errorf("unable to detect user home directory: %w", err)
 	}
 
-	credentialsFile := filepath.Join(home, ".aws", "credentials")
-	credentialsFileBak := filepath.Join(home, ".aws", "credentials.bak")
+	credentialsFile := filepath.Clean(filepath.Join(home, ".aws", "credentials"))
+	credentialsFileBak := filepath.Clean(filepath.Join(home, ".aws", "credentials.bak"))
 
 	credsFile, err := os.Open(credentialsFile)
 	if os.IsNotExist(err) {
