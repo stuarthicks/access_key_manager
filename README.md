@@ -3,6 +3,10 @@ CLI for rotating AWS Access Keys
 
 ## Install
 
+Nix:
+
+    nix run github:stuarthicks/access_key_manager
+
 Using Homebrew:
 
     brew install stuarthicks/tap/access_key_manager
